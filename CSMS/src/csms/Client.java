@@ -4,7 +4,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.control.DatePicker;
 
-public final class Client{
+public final class Client {
     
     private final SimpleIntegerProperty clientId = new SimpleIntegerProperty();
     private final SimpleStringProperty clientFName = new SimpleStringProperty();
