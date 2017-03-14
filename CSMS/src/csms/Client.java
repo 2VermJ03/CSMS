@@ -2,9 +2,8 @@ package csms;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.scene.control.DatePicker;
 
-public final class Client {
+public class Client {
     
     private final SimpleIntegerProperty clientId = new SimpleIntegerProperty();
     private final SimpleStringProperty clientFName = new SimpleStringProperty();
@@ -15,8 +14,8 @@ public final class Client {
     
     
     
-    public Client(int clientId, String clientFNameIn, String clientLNameIn, String clientEmailIn, String clientAddressIn){
-        setClientId(clientId);
+    public Client(int clientIdIn, String clientFNameIn, String clientLNameIn, String clientEmailIn, String clientAddressIn){
+        setClientId(clientIdIn);
         setClientFName(clientFNameIn);
         setClientLName(clientLNameIn);
         setClientEmail(clientEmailIn);        
@@ -68,7 +67,7 @@ public final class Client {
     }
     
     public void displayClient(){
-        System.out.println("Client first name: " + clientFName + "Client last name: " + clientLName + "Client email: " + clientEmail + "Client address: " + clientAddress);
+        System.out.println("Client ID: " + clientId + "Client first name: " + clientFName + "Client last name: " + clientLName + "Client email: " + clientEmail + "Client address: " + clientAddress);
         
         
     }
